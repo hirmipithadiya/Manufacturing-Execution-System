@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f8f7;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-muted: #eef3f1;
+  --surface-dark: #0e1b16;
+  --border: rgba(15, 23, 42, 0.08);
+  --accent: #1f6f63;
+  --accent-soft: #e2f1ed;
+  --accent-amber: #f59e0b;
+  --accent-amber-soft: #fff3d6;
+  --font-sans-stack: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono-stack: "IBM Plex Mono", "SFMono-Regular", "Cascadia Mono", Consolas, monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans-stack);
+  --font-mono: var(--font-mono-stack);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 20%, rgba(31, 111, 99, 0.08), transparent 25%),
+    radial-gradient(circle at 82% 18%, rgba(245, 158, 11, 0.12), transparent 26%),
+    linear-gradient(180deg, #f6f8f7 0%, #f2f5f4 42%, #eef1f0 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans-stack);
+}
+
+::selection {
+  background: rgba(249, 178, 51, 0.35);
+  color: #12241d;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
