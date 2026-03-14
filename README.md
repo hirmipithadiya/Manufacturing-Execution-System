@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Manufacturing-Execution-System
-=======
+
 # ForgeFlow MES
 
 ForgeFlow MES is a cloud-native smart manufacturing execution and intelligence platform built for the AI Mahakurukshetra hackathon. It is a judge-friendly Plex Systems alternative focused on the most demoable MES workflows for small-to-mid manufacturers.
