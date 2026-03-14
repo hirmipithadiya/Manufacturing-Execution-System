@@ -117,4 +117,4 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY
 - No secrets are hardcoded.
 - The current codebase is designed to keep demo data visible even before Supabase auth is fully wired with a real anon key.
 - The supplied project URL is already placed in `.env.example` for convenience.
->>>>>>> 1fe3f3b (Initial commit)
+
